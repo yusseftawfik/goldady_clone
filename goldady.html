@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="/images/Goldady-Logo-white-text.png" type="image/x-icon" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,800;1,300;1,500;1,800&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="goldady.css" />
+	<title>Goldady Task</title>
+</head>
+
+<body>
+	<header>
+
+		<nav class="navbar navbar-dark navbar-expand-lg bg-dark p-2" id="navbar">
+			<div class="container-fluid">
+
+				<div class="d-flex justify-content-center align-items-center">
+					<span class="list-btn" onclick="openNav()">
+						<img src="./images/list-svgrepo-com.svg" alt="logo" width="auto" height="20" />
+					</span>
+					<div class="d-flex flex-column justify-content-center align-items-start ms-4 mobile-hide">
+						<span class="text-light mobile-hide">Welcome, Walid Mostafa</span>
+						<span class="text-light mobile-hide" style="font-size:10px">Account: 1093</span>
+					</div>
+				</div>
+
+				<img src="./images/Goldady-Logo-white-text.png" alt="logo" width="auto" height="55" class="mx-auto" />
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+					data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="offcanvas offcanvas-style offcanvas-end d-flex flex-row justify-content-end align-items-center"
+					tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+					<div class="d-flex justify-content-center align-items-center navbar-icon">
+						<span class="text-light fs-6">العربية</span>
+					</div>
+
+					<div class="dropdown navbar-icon">
+						<button
+							class="dropdown-toggle flag-dropdown-toggle d-flex flex-column justify-content-between align-items-center"
+							type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+							<img src="./images/egypt-svgrepo-com (1).svg" alt="logo" width="auto" height="30" />
+							<span class="text-light">Cairo vault</span>
+						</button>
+						<ul class="dropdown-menu flag-dropdown-menu " aria-labelledby="dropdownMenuButton1">
+							<img src="./images/united-arab-emirates-svgrepo-com.svg" alt="logo" width="auto"
+								height="25" />
+							<span class="text-light">UAE vault</span>
+						</ul>
+					</div>
+
+					<div class="d-flex flex-column justify-content-center align-items-center navbar-icon">
+						<div class="circle d-flex justify-content-center align-items-center">
+							<img src="./images/bell-svgrepo-com.svg" alt="logo" width="auto" height="20" />
+						</div>
+						<span class="text-light">Alerts</span>
+					</div>
+
+					<div class="d-flex flex-column justify-content-center align-items-center navbar-icon">
+						<div class="circle d-flex justify-content-center align-items-center position-relative">
+							<span
+								class="position-absolute top-1 start-100 translate-middle p-1 bg-danger rounded-circle">
+								<span class="visually-hidden">New alerts</span>
+							</span>
+							<img src="./images/user-profile-svgrepo-com.svg" alt="logo" width="auto" height="15" />
+						</div>
+						<span class="text-light">Profile</span>
+					</div>
+
+					<div class="d-flex flex-column justify-content-center align-items-center navbar-icon">
+						<div class="circle d-flex justify-content-center align-items-center">
+							<img src="./images/logout-box-r-svgrepo-com.svg" alt="logo" width="auto" height="20" />
+						</div>
+						<span class="text-light">Sign Out</span>
+					</div>
+				</div>
+
+
+
+
+			</div>
+		</nav>
+	</header>
+
+	<section id="main" class="container-fluid p-5">
+		<div id="mySidenav" class="sidenav">
+			<div class="d-flex flex-column justify-content-center align-items-center mt-5">
+				<img src="./images//user.png" alt="logo" width="auto" height="100" />
+				<span class="text-light">Walid Mostafa</span>
+			</div>
+			<a class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="#">Profile</a>
+			<a href="#">Statment</a>
+			<a href="#">Deals</a>
+			<a href="#">Contact</a>
+		</div>
+
+		<div class="table-container">
+			<div class="data-container mb-3">
+				<div class="d-flex justify-content-center align-items-center">
+					<i class="bi bi-arrow-left-circle-fill fs-3"></i>
+					<span class="fs-5 ms-2 location-name">Account Statment</span>
+				</div>
+				<div class="d-flex justify-content-center align-items-center">
+					<i class="bi bi-bank2"></i>
+					<span>Bank IBAN: </span>
+					<span class="header-data">123456789123456</span>
+				</div>
+				<div class="d-flex justify-content-center align-items-center">
+					<i class="bi bi-currency-exchange"></i>
+					<span>Currency</span>
+					<span class="header-data">EGP</span>
+				</div>
+				<div class="d-flex justify-content-center align-items-center">
+					<span>From: </span>
+					<input type="date" id="start" name="start" class="date-picker">
+				</div>
+				<div class="d-flex justify-content-between align-items-center">
+					<span>To: </span>
+					<input type="date" id="end" name="end" class="date-picker">
+				</div>
+				<div class="d-flex justify-content-between align-items-center">
+					<button type="submit" class="submit-btn">
+						Submit
+					</button>
+				</div>
+			</div>
+			<div>
+				<table class="table table-dark table-hover">
+					<thead>
+						<tr>
+							<th scope="col">Date</th>
+							<th scope="col">Description</th>
+							<th scope="col">
+								Debit
+								<i class="bi bi-dash"></i>
+							</th>
+							<th scope="col">
+								Credit
+								<i class="bi bi-plus"></i>
+							</th>
+							<th scope="col">Balance</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">
+								<span>17/3/2022</span>
+							</th>
+							<td>
+								<i class="bi bi-arrow-left-short"></i>
+								<span>Buying</span>
+								<span class="gold-weight">2 grams</span>
+							</td>
+							<td>
+								<span>2022.80</span>
+								<span>EGP</span>
+							</td>
+							<td></td>
+							<td>
+								<span>4797.15</span>
+								<span>EGP</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<span>23/3/2022</span>
+							</th>
+							<td>
+								<i class="bi bi-arrow-right-short"></i>
+								<span>Selling</span>
+								<span class="gold-weight">5 grams</span>
+							</td>
+							<td>
+							</td>
+							<td>
+								<span>6061.15</span>
+								<span>EGP</span>
+							</td>
+							<td>
+								<span>10597.15</span>
+								<span>EGP</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<span>23/3/2022</span>
+							</th>
+							<td>
+								<i class="bi bi-arrow-right-short"></i>
+								<span>Selling</span>
+								<span class="gold-weight">5 grams</span>
+							</td>
+							<td>
+							</td>
+							<td>
+								<span>6061.15</span>
+								<span>EGP</span>
+							</td>
+							<td>
+								<span>10597.15</span>
+								<span>EGP</span>
+							</td>
+						</tr>
+						<th scope="row">
+							<span>17/3/2022</span>
+						</th>
+						<td>
+							<i class="bi bi-arrow-left-short"></i>
+							<span>Buying</span>
+							<span class="gold-weight">2 grams</span>
+						</td>
+						<td>
+							<span>2022.80</span>
+							<span>EGP</span>
+						</td>
+						<td></td>
+						<td>
+							<span>4797.15</span>
+							<span>EGP</span>
+						</td>
+						</tr>
+						<th scope="row">
+							<span>17/3/2022</span>
+						</th>
+						<td>
+							<i class="bi bi-arrow-left-short"></i>
+							<span>Buying</span>
+							<span class="gold-weight">2 grams</span>
+						</td>
+						<td>
+							<span>2022.80</span>
+							<span>EGP</span>
+						</td>
+						<td></td>
+						<td>
+							<span>4797.15</span>
+							<span>EGP</span>
+						</td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<span>23/3/2022</span>
+							</th>
+							<td>
+								<i class="bi bi-arrow-right-short"></i>
+								<span>Selling</span>
+								<span class="gold-weight">5 grams</span>
+							</td>
+							<td>
+							</td>
+							<td>
+								<span>6061.15</span>
+								<span>EGP</span>
+							</td>
+							<td>
+								<span>10597.15</span>
+								<span>EGP</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<span>23/3/2022</span>
+							</th>
+							<td>
+								<i class="bi bi-arrow-right-short"></i>
+								<span>Selling</span>
+								<span class="gold-weight">5 grams</span>
+							</td>
+							<td>
+							</td>
+							<td>
+								<span>6061.15</span>
+								<span>EGP</span>
+							</td>
+							<td>
+								<span>10597.15</span>
+								<span>EGP</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<span>23/3/2022</span>
+							</th>
+							<td>
+								<i class="bi bi-arrow-right-short"></i>
+								<span>Selling</span>
+								<span class="gold-weight">5 grams</span>
+							</td>
+							<td>
+							</td>
+							<td>
+								<span>6061.15</span>
+								<span>EGP</span>
+							</td>
+							<td>
+								<span>10597.15</span>
+								<span>EGP</span>
+							</td>
+						</tr>
+				</table>
+			</div>
+		</div>
+	</section>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "200px";
+			document.getElementById("main").style.marginLeft = "200px";
+			document.getElementById("navbar").style.marginLeft = "200px";
+		}
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+			document.getElementById("main").style.marginLeft = "0";
+			document.getElementById("navbar").style.marginLeft = "0";
+		}
+	</script>
+</body>
+
+</html>
